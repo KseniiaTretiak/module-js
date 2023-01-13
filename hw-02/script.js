@@ -4,7 +4,7 @@
 // let weight = '88.3';
 // let height = '1.75';
 
-// const bmi = weight / Math.pow(height,2);
+// const bmi = Number(weight) / Math.pow(Number(height),2);
 // console.log(bmi); // 28.8
 
 

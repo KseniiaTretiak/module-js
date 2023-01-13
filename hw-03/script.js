@@ -2,19 +2,16 @@
 
 // for(let i = 1; i < 11; i++){
 
-//     if(i % 2 !== 0 && i % 3 !== 0){
-//         console.log(`Buz`);
-//     }
-//     if(i % 2 === 0 && i % 3 !== 0){
-//         console.log(`Fiz`);
-//     }
-//     if(i % 3 === 0 && i % 2 !== 0) {
-//         console.log(`FizBuz`);  
-//     }
-//     if(i % 3 === 0 && i % 2 === 0) {
-//         console.log(`FizBuz`);  
-//     }
-// }
+//       if(i % 2 !== 0){
+//           console.log(`Buz`);
+//       }
+//       if(i % 2 === 0){
+//           console.log(`Fiz`);
+//       }
+//       if(i % 3 === 0) {
+//           console.log(`FizBuz`);  
+//       }
+//   }
 
 
 // // 2 Написати логіку знаходження факторіалу числа 10.
@@ -29,7 +26,7 @@
 // 3 У пачці паперу 500 аркушів. За тиждень в офісі витрачається 1200 аркушів. Яку найменшу кількість пачок потрібно купити в офіс на 8 тижнів?
 
 // function sumWeeks() {
-//  let paper = (Math.floor(1200/500*8));
+//  let paper = (Math.ceil(1200/500*8));
 //       return paper;
 //     }
 //     console.log(sumWeeks());
@@ -48,10 +45,18 @@
 
 // 5 Вивести у консоль піраміду. Змінна вказує кількість рядків, з яких побудується піраміда. Піраміда повинна будуватися в однаковому візуальному вигляді між собою, але строго враховуючи кількість рядків
 
-// let line = 10;
-// let space = " ";
-// let star = "*";
-// for (let i = 0; i < line; i++) {
-//   space += star;
-//   console.log(space);
+// let rows = 3;
+// let pattern = "";
+
+// for (let i = 1; i <= rows; i++) {
+//    for (let j = 1; j <= rows - i; j++) {
+//       pattern += " ";
+//    }
+ 
+//    for (let k = 1; k <= 2 * i - 1; k++) {
+//       pattern += "*";
+//    }
+//    pattern += "\n";
 // }
+// console.log(pattern);
+
