@@ -8,15 +8,27 @@
 
 // 2. Створити функцію яка поверне всі ключі об'єкта, переданого параметром
 // const obj = { name: 'Vasya', age: 1}
-// const getAllKeys= Object.keys(obj);
-// console.log(getAllKeys) /// ["name", "age"]
+// function getAllKeys (obj){
+//     const objKey = [];
+//     for (const key in obj) {
+//         objKey.push(key);
+//     }
+//     return objKey;
+// }
+// console.log(getAllKeys(obj)) /// ["name", "age"]
 
 //------------------------
 
 // 3. Створити функцію, яка поверне всі значення об'єкта переданого параметром
 // const obj = { name: 'Vasya', age: 1}
-// const getAllValues = Object.values(obj);
-// console.log(getAllValues) /// ["Vasya", 1]
+// function getAllValues (obj){
+//     const objValues = [];
+//     for (const key in obj) {
+//         objValues.push(obj[key]);
+//     }
+//     return objValues;
+// }
+// console.log(getAllValues(obj)) /// ["Vasya", 1]
 
 //------------------------
 
